@@ -1,4 +1,7 @@
 Crafty.scene('win', function() {
+
+	 // TODO: add code here to win
+
 	breakout.createBackground();
 
 	breakout.logo();

@@ -1,7 +1,7 @@
 Crafty.scene('play', function() {
 	var _level;
 	var _score = 0;
-	var _lives = 3;
+	var _lives = 3; // TODO: change this value
 	var _paddle;
 	var _hud;
 

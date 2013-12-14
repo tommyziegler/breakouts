@@ -1,4 +1,7 @@
 Crafty.scene('gameover', function() {
+	
+	// TODO: add code here to loose
+
 	breakout.createBackground();
 
 	breakout.logo();
