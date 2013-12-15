@@ -35,6 +35,9 @@
 
   Q.scene("gameOver",function(stage) {
 
+    console.log('gameOver');
+
+
     var bg = stage.insert(new Q.Background({ type: Q.SPRITE_UI }));
     bg.on("touch",function() {  Q.stageScene("title");  });
 
@@ -52,6 +55,8 @@
   });
 
   Q.scene("winner",function(stage) {
+
+    console.log('winner');
 
     var bg = stage.insert(new Q.Background({ type: Q.SPRITE_UI }));
     bg.on("touch",function() {  Q.stageScene("title");  });
@@ -93,7 +98,7 @@
 
   Q.scene("level1",function(stage) {
     // Set up the game state
-    Q.state.reset({ score: 0, lives: 3, level: 1 });
+    Q.state.reset({ score: 0, lives: 0, level: 1 });
     
     // Add the hud in 
     Q.stageScene("hud"); 
@@ -104,9 +109,11 @@
     
     // Set up a listener for when the stage is complete
     // to load the next level
-    stage.on("complete",function() { Q.stageScene("level2"); });
-  });
+//    stage.on("complete",function() { Q.stageScene("level2"); });
+    stage.on("complete",function() { Q.stageScene("winner"); });
 
+  });
+/*
   Q.scene("level2",function(stage) {
     Q.state.set("level",2);
     setupLevel("level2",stage);
@@ -124,6 +131,7 @@
     setupLevel("level4",stage);
     stage.on("complete",function() { Q.stageScene("winner"); });
   });
+*/
 
   // Level Skipping
   Q.input.on('left',function() {

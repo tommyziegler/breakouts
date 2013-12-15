@@ -11,7 +11,7 @@
     [o,b,g,g,g,b,o],
     [X,b,b,b,b,b,X]
   ];
-
+/*
   Q.assets['level2'] = [
     [X,g,o,g,o,g,X],
     [X,b,b,b,b,b,X],
@@ -40,6 +40,6 @@
     [o,X,X,X,X,X,o],
     [g,r,b,o,g,r,b]
   ];
-
+*/
 
 };
